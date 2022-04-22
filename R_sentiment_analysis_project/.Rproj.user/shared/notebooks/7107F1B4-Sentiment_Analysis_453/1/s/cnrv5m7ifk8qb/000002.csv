@@ -1,0 +1,6 @@
+"0",""
+"0","# Construct vectorized list of 21 posts from all 10 subs"
+"0","post_names_vectorized <- list()"
+"0","    post_names_vectorized[i] <- vectorize_posts(filtered_unique_post_names, subreddits[i])"
+"0","}"
+"0",""

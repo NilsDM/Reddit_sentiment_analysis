@@ -1,0 +1,92 @@
+"0","# Data frames binded by day
+df_day_1 <- data_frame_bind(data.frame(), data_pulls, 1)
+df_day_2 <- data_frame_bind(data.frame(), data_pulls, 4)
+df_day_3 <- data_frame_bind(data.frame(), data_pulls, 7)
+df_day_4 <- data_frame_bind(data.frame(), data_pulls, 10)
+df_day_5 <- data_frame_bind(data.frame(), data_pulls, 13)
+df_day_6 <- data_frame_bind(data.frame(), data_pulls, 16)
+df_day_7 <- data_frame_bind(data.frame(), data_pulls, 19)
+
+
+# Filter outpost with less than 30 comments
+# Each data frame now has between 113-124 unique posts remaining
+df_day_1_filtered  <- 
+    df_day_1 %>% 
+    calculate_number_of_comments() %>% 
+    filter(comment_count >= 30) 
+    
+df_day_2_filtered   <- 
+    df_day_2 %>% 
+    calculate_number_of_comments() %>% 
+    filter(comment_count >= 30)
+
+df_day_3_filtered   <- 
+    df_day_3 %>% 
+    calculate_number_of_comments() %>% 
+    filter(comment_count >= 30)
+
+df_day_4_filtered   <- 
+    df_day_4 %>% 
+    calculate_number_of_comments() %>% 
+    filter(comment_count >= 30)
+
+df_day_5_filtered   <- 
+    df_day_5 %>% 
+    calculate_number_of_comments() %>% 
+    filter(comment_count >= 30)
+
+df_day_6_filtered   <- 
+    df_day_6 %>% 
+    calculate_number_of_comments() %>% 
+    filter(comment_count >= 30)
+
+df_day_7_filtered   <- 
+    df_day_7 %>% 
+    calculate_number_of_comments() %>% 
+    filter(comment_count >= 30)
+
+# Number of posts remaining
+dim(df_day_1_filtered ) 
+"
+"1","[1]"
+"1"," 124"
+"1","   3"
+"1","
+"
+"0","dim(df_day_2_filtered )"
+"1","[1]"
+"1"," 118"
+"1","   3"
+"1","
+"
+"0","dim(df_day_3_filtered ) "
+"1","[1]"
+"1"," 113"
+"1","   3"
+"1","
+"
+"0","dim(df_day_4_filtered )"
+"1","[1]"
+"1"," 117"
+"1","   3"
+"1","
+"
+"0","dim(df_day_5_filtered ) "
+"0","dim(df_day_6_filtered )"
+"1","[1]"
+"1"," 118"
+"1","   3"
+"1","
+"
+"1","[1]"
+"1"," 119"
+"1","   3"
+"1","
+"
+"0","unique_post_count_1 <- count_unique_posts(df_day_1_filtered)"
+"0","unique_post_count_2 <- count_unique_posts(df_day_2_filtered)"
+"0","unique_post_count_3 <- count_unique_posts(df_day_3_filtered)"
+"0","unique_post_count_4 <- count_unique_posts(df_day_4_filtered)"
+"0","unique_post_count_5 <- count_unique_posts(df_day_5_filtered)"
+"0","unique_post_count_6 <- count_unique_posts(df_day_6_filtered)"
+"0","unique_post_count_7 <- count_unique_posts(df_day_7_filtered)"

@@ -1,0 +1,10 @@
+"0","total_author_count <- 137074
+power_user_count <- 6342
+
+# power_user_proportion
+power_user_count / total_author_count
+"
+"1","[1]"
+"1"," 0.04626698"
+"1","
+"

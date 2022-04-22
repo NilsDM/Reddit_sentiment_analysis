@@ -1,0 +1,8 @@
+"0","full_master_df <- full_master_df[-1,] # Remove empty first line"
+"0","full_master_df <- full_master_df %>% "
+"0","                  mutate("
+"0","                       post_karma       = as.integer(karma),"
+"0","                       post_karma_ratio = as.numeric(karma_ratio),"
+"0","                       comment_karma    = as.integer(comment_karma),"
+"0","                       sentiment_score  = as.numeric(comment_score)) %>% "
+"0","full_master_df %>% view()"

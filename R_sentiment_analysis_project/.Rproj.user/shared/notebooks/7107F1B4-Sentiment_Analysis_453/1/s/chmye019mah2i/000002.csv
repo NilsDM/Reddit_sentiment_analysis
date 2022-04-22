@@ -1,0 +1,7 @@
+"0","sentiment_interactions <- aov(sentiment_score ~ "
+"0","                            factor(subreddit)  *  "
+"0","                            post_karma         * "
+"0","                            post_karma_ratio   * "
+"0","                            comment_karma      * "
+"0","                            factor(id_tag)         "
+"0","                            ,data = full_master_df)"

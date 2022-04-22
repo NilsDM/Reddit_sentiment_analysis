@@ -1,0 +1,4 @@
+"0","df_comments_all_days <- list(df_day_1_comments, df_day_2_comments,"
+"0","                             df_day_3_comments, df_day_4_comments,"
+"0","                             df_day_5_comments, df_day_6_comments,"
+"0","                             df_day_7_comments)"

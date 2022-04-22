@@ -1,0 +1,79 @@
+"0","library(tidyr)  "
+"0","library(tibble)"
+"0","library(stringr) "
+"0","library(purrr)"
+"0","library(dplyr) "
+"2","
+Attaching package: ‘dplyr’
+
+"
+"2","The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+"
+"0","library(ggplot2)"
+"2","Want to understand how all the pieces fit together? Read R for Data Science: https://r4ds.had.co.nz/
+"
+"0","library(ggridges)"
+"0","library(tidyquant)"
+"2","Loading required package: lubridate
+"
+"2","
+Attaching package: ‘lubridate’
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+"
+"2","Loading required package: xts
+"
+"2","Loading required package: zoo
+"
+"2","
+Attaching package: ‘zoo’
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
+"
+"2","
+Attaching package: ‘xts’
+
+"
+"2","The following objects are masked from ‘package:dplyr’:
+
+    first, last
+
+"
+"2","
+Attaching package: ‘PerformanceAnalytics’
+
+"
+"2","The following object is masked from ‘package:graphics’:
+
+    legend
+
+"
+"2","Loading required package: quantmod
+"
+"2","Loading required package: TTR
+"
+"2","Registered S3 method overwritten by 'quantmod':
+  method            from
+  as.zoo.data.frame zoo 
+"
+"2","[38;5;117m==[39m [38;5;117mNeed to Learn tidyquant?[39m [38;5;117m=========================================================================================[39m[38;5;43m
+Business Science offers a 1-hour course - Learning Lab #9: Performance Analysis & Portfolio Optimization with tidyquant!
+[39m[38;5;43m</> Learn more at: https://university.business-science.io/p/learning-labs-pro </>[39m
+"
+"0","library(syuzhet)"

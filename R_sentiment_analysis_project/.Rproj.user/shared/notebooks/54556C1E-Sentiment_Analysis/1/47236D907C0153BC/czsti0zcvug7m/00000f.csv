@@ -1,0 +1,25 @@
+"0","# s_plot_test <- 
+full_master_df %>% 
+    ggplot(aes(x = subreddit, y = sentiment_score, group = subreddit)) + 
+    geom_boxplot(data = full_master_df, aes(fill = subreddit, alpha = 0.4),
+    notch = TRUE, show.legend = FALSE, size = .3,
+    colour = ""black"") +
+    stat_summary(fun.y=""mean"") + 
+    # geom_jitter(color = ""black"", fill = ""white"", size = 1, alpha = 0.15) +
+    labs(
+        title    = ""Sentiment Score Distribution"",
+        subtitle = ""30 comments randomly sampled from each sub's current top 21 posts over 7 days"",
+        caption  = ""Note: The 'notch' on each boxplot represents the confidence interval of the median"",
+        x        = ""SubReddits"",
+        y        = ""Sentiment""
+    ) + theme_tq() + 
+    theme(axis.text.x   = element_text(angle = 45, vjust = 1, hjust=1, size = 12, face = ""bold""),
+          axis.title.x  = element_text(size = 12, face = ""bold"", vjust = 10),
+          axis.title.y  = element_text(size = 12, face = ""bold"")) 
+"
+"2","Warning:"
+"2"," `fun.y` is deprecated. Use `fun` instead.
+"
+"2","Warning:"
+"2"," Removed 10 rows containing missing values (geom_segment).
+"

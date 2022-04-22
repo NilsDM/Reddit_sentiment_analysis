@@ -1,0 +1,6 @@
+"0","all_days_df <- data.frame()"
+"0","for(i in 1:7){"
+"0","  all_days_df <- rbind(all_days_df, df_comments_all_days[[i]])"
+"0","}"
+"0",""
+"0","all_data_plot <- all_days_df %>% boxplot_plotting_with_dots()"
